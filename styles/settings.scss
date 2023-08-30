@@ -1,14 +1,3 @@
-// variables 
 $background : rgb(12, 42, 74);
-$white: #fff;
-$red : red;
-$grey : rgb(252, 252, 252);
-// Break Point
-$mobile-media-query: "(max-width: 501px)";
-
-// _variables.scss
-@mixin hideOnMobile {
-    @media #{$mobile-media-query} {
-        display: none;
-    }
-}
+$blanc: #fff;
+$rouge : red;

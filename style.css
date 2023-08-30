@@ -1,142 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 4 |     background-color: settings.$grey;
+ *   |                       ^^^^^^^^^^^^^^
+ *   '
+ *   styles/header.scss 4:23  @use
+ *   styles/main.scss 3:1     root stylesheet */
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 4 \2502      background-color: settings.$grey;\a   \2502                        ^^^^^^^^^^^^^^\a   \2575 \a   styles/header.scss 4:23  @use\a   styles/main.scss 3:1     root stylesheet";
 }
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-header {
-  background-color: rgb(252, 252, 252);
-}
-header .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-@media (max-width: 501px) {
-  header .row .left p {
-    display: none;
-  }
-}
-header .row .right h6 {
-  font-weight: 600;
-}
-@media (max-width: 501px) {
-  header .row .right ul {
-    display: none;
-  }
-}
-
-nav {
-  background-color: rgb(12, 42, 74);
-  color: #fff;
-  padding: 20px;
-}
-nav .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-@media (min-width: 501px) {
-  nav .container {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-}
-@media (max-width: 501px) {
-  nav .container .menu_left {
-    display: none;
-  }
-}
-nav .container .menu_right {
-  justify-content: center;
-  align-items: center;
-}
-nav .container .menu_right ul {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-@media (max-width: 501px) {
-  nav .container .menu_right ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-nav .container .menu_right ul li {
-  margin-right: 40px;
-  display: inline-block;
-  position: relative;
-}
-@media (max-width: 501px) {
-  nav .container .menu_right ul li {
-    padding-bottom: 20px;
-  }
-}
-nav .container .menu_right ul li #PanierCount {
-  position: absolute;
-  top: 2%;
-  left: 40%;
-  border-radius: 50%;
-  padding: 3px;
-  font-size: 12px;
-  background-color: #fff;
-  color: red;
-}
-nav .container .menu_right ul li select {
-  background-color: rgb(12, 42, 74);
-  color: #fff;
-  border: none;
-}
-
-* {
-  font-family: "Montserrat", sans-serif;
-}
-
-/*# sourceMappingURL=style.css.map */

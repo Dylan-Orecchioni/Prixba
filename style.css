@@ -53,12 +53,90 @@ table {
   border-spacing: 0;
 }
 
-* {
-  font-family: "Montserrat", sans-serif;
+header {
+  background-color: rgb(252, 252, 252);
+}
+header .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 501px) {
+  header .row .left p {
+    display: none;
+  }
+}
+header .row .right h6 {
+  font-weight: 600;
+}
+@media (max-width: 501px) {
+  header .row .right ul {
+    display: none;
+  }
 }
 
-h1 {
+nav {
+  background-color: rgb(12, 42, 74);
+  color: #fff;
+  padding: 20px;
+}
+nav .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (min-width: 501px) {
+  nav .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+@media (max-width: 501px) {
+  nav .container .menu_left {
+    display: none;
+  }
+}
+nav .container .menu_right {
+  justify-content: center;
+  align-items: center;
+}
+nav .container .menu_right ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 501px) {
+  nav .container .menu_right ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+nav .container .menu_right ul li {
+  margin-right: 40px;
+  display: inline-block;
+  position: relative;
+}
+@media (max-width: 501px) {
+  nav .container .menu_right ul li {
+    padding-bottom: 20px;
+  }
+}
+nav .container .menu_right ul li #PanierCount {
+  position: absolute;
+  top: 2%;
+  left: 40%;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 12px;
+  background-color: #fff;
   color: red;
+}
+nav .container .menu_right ul li select {
+  background-color: rgb(12, 42, 74);
+  color: #fff;
+  border: none;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

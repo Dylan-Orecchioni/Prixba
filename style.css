@@ -53,12 +53,50 @@ table {
   border-spacing: 0;
 }
 
-* {
-  font-family: "Montserrat", sans-serif;
+.red {
+  color: #EA5455;
 }
 
-h1 {
-  color: red;
+.green {
+  color: #42CC58;
+}
+
+.best_sells_section_container {
+  margin-top: 120px;
+}
+.best_sells_section_container .best_sells_title {
+  margin-left: 41px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.best_sells_section_container .best_sells_container-m {
+  display: flex;
+  justify-content: center;
+}
+.best_sells_section_container .best_sells_container-m .best_sells_card_container {
+  margin-top: 41px;
+  box-shadow: 0 0 19px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 6px;
+  width: 80%;
+}
+.best_sells_section_container .best_sells_container-m .best_sells_card_container .best_sells_card {
+  padding: 26px;
+}
+.best_sells_section_container .best_sells_container-m .best_sells_card_container .best_sells_card_description {
+  margin-top: 8px;
+}
+.best_sells_section_container .best_sells_container-m .best_sells_card_container .best_sells_card_description .best_sells_card_price {
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

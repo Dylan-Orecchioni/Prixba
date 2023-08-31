@@ -190,8 +190,8 @@ nav .container .menu_right ul li select {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 100px 50px;
-  gap: 111px;
+  padding: 100px 0;
+  margin: 0 auto;
   background-color: rgb(218, 217, 217);
 }
 .footer_container .footer--second .footer--second--nav {
@@ -233,6 +233,7 @@ nav .container .menu_right ul li select {
     align-items: center;
     justify-content: center;
     text-align: left;
+    max-width: 250px;
   }
   .footer_container .footer_first .footer_first_item svg {
     height: 36px;

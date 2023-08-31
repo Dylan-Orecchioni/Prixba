@@ -2,11 +2,12 @@
 
 .footer_container{
     font-family: settings.$font;
-    .footer--first {
+    .footer_first {
         margin: 0 auto;
         padding: 30px;
         background-color: settings.$blue;
-        .footer_item {
+
+        .footer_first_item {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -72,6 +73,18 @@
                     font-weight: 500;
                 }
             }
+        }
+    }
+
+    .footer_third{
+        background-color: settings.$blue;
+        text-align: center;
+        padding: 25px;
+        .footer_mentions {
+            color: settings.$grey;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 43px;
         }
     }
 }

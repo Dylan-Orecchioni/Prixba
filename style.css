@@ -141,6 +141,7 @@ a {
   font-size: 30px;
   font-weight: 700;
   margin-left: 41px;
+  line-height: 33px;
 }
 
 .best_sells_section_container {
@@ -195,6 +196,21 @@ a {
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.market_container .market_content {
+  text-align: center;
+  margin-top: 90px;
+}
+.market_container .market_content p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+.market_container .market_content img {
+  width: 80%;
+  height: 232px;
 }
 
 * {

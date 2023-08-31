@@ -1,0 +1,100 @@
+@use 'settings';
+
+header {
+    background-color: settings.$grey;
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .left {
+            p {
+                @media (max-width: 501px) {
+                    display: none;
+                }
+            }
+        }
+
+        .right {
+            h6 {
+                font-weight: 600;
+            }
+
+            ul {
+                @media (max-width: 501px) {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+
+nav {
+    background-color: settings.$blue;
+    color: settings.$white;
+    padding: 20px;
+
+    .container {
+        @media (min-width: 501px) {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .menu_left {
+            @media (max-width: 501px) {
+                display: none;
+            }
+        }
+
+        .menu_right {
+            justify-content: center;
+            align-items: center;
+
+
+            ul {
+                width: 100%;
+
+                @media (max-width: 501px) {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                display: flex;
+                flex-direction: row;
+
+                li {
+                    @media (max-width: 501px) {
+                        padding-bottom: 20px;
+                    }
+
+                    margin-right: 40px;
+
+                    display: inline-block;
+                    position: relative;
+
+                    #PanierCount {
+                        position: absolute;
+                        top: 2%;
+                        left: 40%;
+                        border-radius: 50%;
+                        padding: 3px;
+                        font-size: 12px;
+                        background-color: settings.$white;
+                        color: settings.$red
+                    }
+
+                    select {
+                        background-color: settings.$blue;
+                        color: settings.$white;
+                        border: none;
+                    }
+                }
+            }
+
+        }
+    }
+}

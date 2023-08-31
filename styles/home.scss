@@ -7,14 +7,20 @@
 .green {
     color: settings.$green;
 }
-
-
+.blue {
+    color: settings.$blue;
+}
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 41px;
+    line-height: 33px;
+}
 .best_sells_section_container{
     margin-top: 120px;
+    margin-bottom: 113px ;
     .best_sells_title{
-                margin-left: 41px;
-                font-size: 30px;
-                font-weight: 700;
+
             }
     .best_sells_container-m {
     display: flex;
@@ -55,7 +61,48 @@
 
 
 }
+    .categories_container {
+        margin-bottom: 141px;
+        .categories_content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 41px;
+            gap: 35px;
+            margin-top: 62px;
 
+             .categories_card {
+            background-color: settings.$blue;
+            color: settings.$white;
+            border-radius: 20px;
+            width: 40%;
+            height: 138px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            
+        }
+    }
+        }
+    .market_container {
+       
+        .market_content{
+            text-align: center;
+            margin-top: 90px;
+            p {
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 27px;
+                margin-bottom: 27px;
+            }
+            img{
+                width:80%;
+                height: 232px;
+            }
+        }
+    }
 
 
 

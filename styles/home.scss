@@ -18,21 +18,70 @@
 }
 .best_sells_section_container{
     margin-top: 120px;
-    margin-bottom: 113px ;
+    margin-bottom: 113px;
+
+    .best_sells_container{
+        display: flex;
+        flex-direction: column;
+
+ 
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+        .best_sells_card_container {
+            display: flex;
+            justify-content: center;
+            gap: 21px;
+            width: 100%;
+            
+            .next {
+                margin-left: 73px;
+            }
+            .previous {
+                margin-right: 73px;
+            }
+
+            .best_sells_card{
+                padding: 17px 22px;
+                margin-top: 41px;
+                box-shadow: 0 0 19px rgba(0, 0, 0, 0.1);
+                width: 15%;
+                .best_sells_card_img {
+                    text-align: center;
+                    img {
+                        width: 100%;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .best_sells_title-m{
+        @media screen and (min-width: 1000px) {
+            display: none;
+            }
+        }
     .best_sells_title{
+        @media screen and (min-width: 1000px) {
 
             }
+        }
     .best_sells_container-m {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
         .next {
 
         }
         .previous {
 
         }
+
         
-        .best_sells_card_container{
+        .best_sells_card_container-m{
             margin-top: 41px;
             box-shadow: 0 0 19px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -42,14 +91,14 @@
             border-radius: 6px;
             width: 80%;
 
-            .best_sells_card{
+            .best_sells_card-m{
                 padding: 26px;
             }
 
-            .best_sells_card_description{
+            .best_sells_card_description-m{
                 margin-top: 8px;
                 
-                .best_sells_card_price {
+                .best_sells_card_price-m {
                     margin-top: 9px;
                     display: flex;
                     justify-content: space-between;

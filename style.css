@@ -292,11 +292,54 @@ nav .container .menu_right ul li select {
   margin-top: 120px;
   margin-bottom: 113px;
 }
+.best_sells_section_container .best_sells_container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1000px) {
+  .best_sells_section_container .best_sells_container {
+    display: none;
+  }
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  width: 100%;
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container .next {
+  margin-left: 73px;
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container .previous {
+  margin-right: 73px;
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container .best_sells_card {
+  padding: 17px 22px;
+  margin-top: 41px;
+  box-shadow: 0 0 19px rgba(0, 0, 0, 0.1);
+  width: 15%;
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container .best_sells_card .best_sells_card_img {
+  text-align: center;
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container .best_sells_card .best_sells_card_img img {
+  width: 100%;
+}
+@media screen and (min-width: 1000px) {
+  .best_sells_section_container .best_sells_title-m {
+    display: none;
+  }
+}
 .best_sells_section_container .best_sells_container-m {
   display: flex;
   justify-content: center;
 }
-.best_sells_section_container .best_sells_container-m .best_sells_card_container {
+@media screen and (min-width: 1000px) {
+  .best_sells_section_container .best_sells_container-m {
+    display: none;
+  }
+}
+.best_sells_section_container .best_sells_container-m .best_sells_card_container-m {
   margin-top: 41px;
   box-shadow: 0 0 19px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -306,13 +349,13 @@ nav .container .menu_right ul li select {
   border-radius: 6px;
   width: 80%;
 }
-.best_sells_section_container .best_sells_container-m .best_sells_card_container .best_sells_card {
+.best_sells_section_container .best_sells_container-m .best_sells_card_container-m .best_sells_card-m {
   padding: 26px;
 }
-.best_sells_section_container .best_sells_container-m .best_sells_card_container .best_sells_card_description {
+.best_sells_section_container .best_sells_container-m .best_sells_card_container-m .best_sells_card_description-m {
   margin-top: 8px;
 }
-.best_sells_section_container .best_sells_container-m .best_sells_card_container .best_sells_card_description .best_sells_card_price {
+.best_sells_section_container .best_sells_container-m .best_sells_card_container-m .best_sells_card_description-m .best_sells_card_price-m {
   margin-top: 9px;
   display: flex;
   justify-content: space-between;

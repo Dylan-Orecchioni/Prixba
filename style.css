@@ -60,19 +60,19 @@ a {
 .footer_container {
   font-family: "Montserrat", sans-serif;
 }
-.footer_container .footer--first {
+.footer_container .footer_first {
   margin: 0 auto;
   padding: 30px;
   background-color: #2D4059;
 }
-.footer_container .footer--first .footer_item {
+.footer_container .footer_first .footer_first_item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   margin-bottom: 15px;
 }
-.footer_container .footer--first .footer_item .footer_item--logo-m {
+.footer_container .footer_first .footer_first_item .footer_item--logo-m {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,22 +81,22 @@ a {
   background-color: #E5E5E5;
   max-width: 50px;
 }
-.footer_container .footer--first .footer_item .footer_item--logo-m svg {
+.footer_container .footer_first .footer_first_item .footer_item--logo-m svg {
   fill: #EA5455;
   height: 3em;
 }
-.footer_container .footer--first .footer_item .footer_item--body-m {
+.footer_container .footer_first .footer_first_item .footer_item--body-m {
   display: flex;
   flex-direction: column;
   color: #E5E5E5;
   gap: 10px;
   padding-left: 15px;
 }
-.footer_container .footer--first .footer_item .footer_item--body-m h2 {
+.footer_container .footer_first .footer_first_item .footer_item--body-m h2 {
   font-size: 1.56rem;
   font-weight: 700;
 }
-.footer_container .footer--first .footer_item .footer_item--body-m p {
+.footer_container .footer_first .footer_first_item .footer_item--body-m p {
   font-size: 1.12rem;
   font-weight: 500;
 }

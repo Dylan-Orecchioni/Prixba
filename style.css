@@ -192,6 +192,7 @@ nav .container .menu_right ul li select {
   flex-direction: column;
   padding: 100px 0;
   margin: 0 auto;
+  gap: 111px;
   background-color: rgb(218, 217, 217);
 }
 .footer_container .footer--second .footer--second--nav {

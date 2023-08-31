@@ -20,10 +20,36 @@ header {
                 font-weight: 600;
             }
 
+            @media (min-width: 501px) {
+                margin-left: 50px;
+            }
+
             ul {
                 @media (max-width: 501px) {
                     display: none;
                 }
+
+                display: flex;
+
+                li {
+                    margin: 10px;
+
+
+                    a {
+                        color: settings.$black;
+                    }
+
+                    span {
+                        border-radius: 100%;
+                        padding: 3px;
+                        font-size: 15px;
+                        background-color: settings.$white;
+                        color: settings.$red;
+                        padding: 5px 10px;
+                    }
+
+                }
+
             }
         }
 
@@ -41,56 +67,89 @@ nav {
             margin-right: 50px;
         }
 
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
 
         .menu_left {
             @media (max-width: 501px) {
                 display: none;
             }
+
+            display: grid;
+            grid-template-columns: 1fr 3fr 2fr;
+            gap: 20px;
+
+            input {
+                border-radius: 8px;
+                border: solid 1px settings.$white;
+            }
+
+            button {
+                background-color: settings.$red;
+                border: solid 1px settings.$red;
+                border-radius: 8px;
+                color: settings.$white;
+            }
+
+            select {
+                background-color: settings.$grey;
+                border: solid 1px settings.$grey;
+                border-radius: 8px;
+                color: settings.$blue;
+                padding-left: 20px;
+                padding-right: 5px;
+            }
         }
 
         .menu_right {
-            justify-content: center;
-            align-items: center;
-
-
             ul {
-                width: 100%;
+
+
+                margin-left: 30px;
 
                 @media (max-width: 501px) {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    // display: flex;
+                    // grid-template-columns: repeat(2, 1fr);
                 }
 
-                display: flex;
-                flex-direction: row;
-
                 li {
+                    margin-right: 40px;
+                    display: inline-block;
+                    position: relative;
+
                     @media (max-width: 501px) {
                         padding-bottom: 20px;
                     }
 
-                    margin-right: 40px;
+                    @media (min-width: 501px) {
+                        #PanierCount {
+                            position: absolute;
+                            top: 2%;
+                        }
+                    }
 
-                    display: inline-block;
-                    position: relative;
+                    @media (max-width: 501px) {
+                        #PanierCount {
+                            position: absolute;
+                            top: 2%;
+                            // right: %;
+                        }
+                    }
 
                     #PanierCount {
-                        position: absolute;
-                        top: 2%;
-                        left: 40%;
-                        border-radius: 50%;
+                        border-radius: 100%;
                         padding: 3px;
-                        font-size: 12px;
+                        font-size: 10px;
                         background-color: settings.$white;
-                        color: settings.$red
+                        color: settings.$red;
+                        padding: 3px 5px;
+
                     }
 
                     select {
                         background-color: settings.$blue;
                         color: settings.$white;
                         border: none;
+                        font-size: 16px;
                     }
                 }
             }

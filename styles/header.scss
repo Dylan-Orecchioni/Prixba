@@ -31,7 +31,7 @@ header {
 }
 
 nav {
-    background-color: settings.$background;
+    background-color: settings.$blue;
     color: settings.$white;
     padding: 20px;
 
@@ -88,7 +88,7 @@ nav {
                     }
 
                     select {
-                        background-color: settings.$background;
+                        background-color: settings.$blue;
                         color: settings.$white;
                         border: none;
                     }

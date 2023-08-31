@@ -13,7 +13,7 @@
 .title {
     font-size: 30px;
     font-weight: 700;
-    margin-left: 41px;
+    margin-left: 10.5%;
     line-height: 33px;
 }
 .best_sells_section_container{
@@ -52,7 +52,20 @@
                     img {
                         width: 100%;
                     }
+
                     
+                }
+                .best_sells_card_description{
+                    margin-top: 12px;
+                    .card_product{
+                        font-weight: 700;
+                    }
+                    .best_sells_card_price {
+                        margin-top: 6px;
+                        display: flex;
+                        justify-content: space-between;
+                        font-weight: 500;
+                    }
                 }
             }
         }

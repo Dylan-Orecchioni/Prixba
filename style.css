@@ -284,7 +284,7 @@ nav .container .menu_right ul li select {
 .title {
   font-size: 30px;
   font-weight: 700;
-  margin-left: 41px;
+  margin-left: 10.5%;
   line-height: 33px;
 }
 
@@ -324,6 +324,18 @@ nav .container .menu_right ul li select {
 }
 .best_sells_section_container .best_sells_container .best_sells_card_container .best_sells_card .best_sells_card_img img {
   width: 100%;
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container .best_sells_card .best_sells_card_description {
+  margin-top: 12px;
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container .best_sells_card .best_sells_card_description .card_product {
+  font-weight: 700;
+}
+.best_sells_section_container .best_sells_container .best_sells_card_container .best_sells_card .best_sells_card_description .best_sells_card_price {
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
 }
 @media screen and (min-width: 1000px) {
   .best_sells_section_container .best_sells_title-m {

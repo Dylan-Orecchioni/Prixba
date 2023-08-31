@@ -430,6 +430,49 @@ nav .container .menu_right ul li select {
   height: 232px;
 }
 
+.product_show {
+  margin: 100px 200px;
+}
+.product_show .product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.product_show .product .image {
+  border: solid 1px rgb(218, 217, 217);
+  border-radius: 15px;
+}
+.product_show .product .image img {
+  border-radius: 15px;
+}
+.product_show .product .text {
+  margin-left: 20px;
+}
+.product_show .product .text h6 {
+  font-weight: 600;
+}
+.product_show .product .text p {
+  margin-top: 20px;
+}
+.product_show .product .text ul {
+  display: flex;
+}
+.product_show .product .text ul li {
+  padding: 10px;
+}
+.product_show .declinaison {
+  display: flex;
+  justify-content: flex-start;
+}
+.product_show .declinaison ul {
+  display: flex;
+}
+.product_show .declinaison ul li img {
+  width: 80px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }

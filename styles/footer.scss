@@ -75,4 +75,16 @@
             }
         }
     }
+
+    .footer_third{
+        background-color: settings.$blue;
+        text-align: center;
+        padding: 25px;
+        .footer_mentions {
+            color: settings.$grey;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 43px;
+        }
+    }
 }

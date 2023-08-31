@@ -8,8 +8,16 @@ header {
         grid-template-columns: 1fr 1fr;
 
         .left {
+            position: relative;
+
             p {
-                @media (max-width: 501px) {
+                position: absolute;
+                top: 20px;
+                left: 60px;
+                font-weight: 600;
+                color: settings.$blue;
+
+                @media (max-width: 676px) {
                     display: none;
                 }
             }
@@ -18,21 +26,29 @@ header {
         .right {
             h6 {
                 font-weight: 600;
+                font-size: 14px;
             }
 
-            @media (min-width: 501px) {
-                margin-left: 50px;
+            @media (min-width: 676px) {
+                // margin-left: 50px;
             }
 
             ul {
-                @media (max-width: 501px) {
+                @media (max-width: 676px) {
                     display: none;
                 }
 
                 display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
 
                 li {
-                    margin: 10px;
+
+                    &:last-child {
+                        margin-right: 20px;
+                    }
+
+                    font-size: 12px;
 
 
                     a {
@@ -40,6 +56,7 @@ header {
                     }
 
                     span {
+                        margin: 10px;
                         border-radius: 100%;
                         padding: 3px;
                         font-size: 15px;
@@ -62,15 +79,15 @@ nav {
     padding: 20px;
 
     .container {
-        @media (min-width: 501px) {
+        @media (min-width: 676px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             margin-left: 50px;
             margin-right: 50px;
         }
 
-        display: flex;
-
         .menu_left {
-            @media (max-width: 501px) {
+            @media (max-width: 676px) {
                 display: none;
             }
 
@@ -95,20 +112,16 @@ nav {
                 border: solid 1px settings.$grey;
                 border-radius: 8px;
                 color: settings.$blue;
-                padding-left: 20px;
-                padding-right: 5px;
+                padding: 5px 20px;
             }
         }
 
         .menu_right {
             ul {
-
-
                 margin-left: 30px;
 
-                @media (max-width: 501px) {
-                    // display: flex;
-                    // grid-template-columns: repeat(2, 1fr);
+                @media (min-width: 676px) {
+                    display: flex;
                 }
 
                 li {
@@ -116,18 +129,34 @@ nav {
                     display: inline-block;
                     position: relative;
 
-                    @media (max-width: 501px) {
-                        padding-bottom: 20px;
+                    &.svg {
+                        position: absolute;
+                        right: 100px;
+                        font-size: 30px;
                     }
 
-                    @media (min-width: 501px) {
-                        #PanierCount {
+                    @media (max-width: 676px) {
+                        padding-bottom: 20px;
+
+                        &.svg {
                             position: absolute;
-                            top: 2%;
+                            right: 60px;
+                            font-size: 20px;
                         }
                     }
 
-                    @media (max-width: 501px) {
+                    @media (min-width: 676px) {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        #PanierCount {
+                            position: absolute;
+                            top: 2%;
+                            left: 40px;
+                        }
+                    }
+
+                    @media (max-width: 676px) {
                         #PanierCount {
                             position: absolute;
                             top: 2%;

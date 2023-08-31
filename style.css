@@ -64,34 +64,46 @@ header .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media (max-width: 501px) {
+header .row .left {
+  position: relative;
+}
+header .row .left p {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  font-weight: 600;
+  color: #2D4059;
+}
+@media (max-width: 676px) {
   header .row .left p {
     display: none;
   }
 }
 header .row .right h6 {
   font-weight: 600;
-}
-@media (min-width: 501px) {
-  header .row .right {
-    margin-left: 50px;
-  }
+  font-size: 14px;
 }
 header .row .right ul {
   display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
-@media (max-width: 501px) {
+@media (max-width: 676px) {
   header .row .right ul {
     display: none;
   }
 }
 header .row .right ul li {
-  margin: 10px;
+  font-size: 12px;
+}
+header .row .right ul li:last-child {
+  margin-right: 20px;
 }
 header .row .right ul li a {
   color: #000;
 }
 header .row .right ul li span {
+  margin: 10px;
   border-radius: 100%;
   padding: 3px;
   font-size: 15px;
@@ -105,11 +117,10 @@ nav {
   color: #fff;
   padding: 20px;
 }
-nav .container {
-  display: flex;
-}
-@media (min-width: 501px) {
+@media (min-width: 676px) {
   nav .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-left: 50px;
     margin-right: 50px;
   }
@@ -119,7 +130,7 @@ nav .container .menu_left {
   grid-template-columns: 1fr 3fr 2fr;
   gap: 20px;
 }
-@media (max-width: 501px) {
+@media (max-width: 676px) {
   nav .container .menu_left {
     display: none;
   }
@@ -139,29 +150,48 @@ nav .container .menu_left select {
   border: solid 1px rgb(218, 217, 217);
   border-radius: 8px;
   color: #2D4059;
-  padding-left: 20px;
-  padding-right: 5px;
+  padding: 5px 20px;
 }
 nav .container .menu_right ul {
   margin-left: 30px;
+}
+@media (min-width: 676px) {
+  nav .container .menu_right ul {
+    display: flex;
+  }
 }
 nav .container .menu_right ul li {
   margin-right: 40px;
   display: inline-block;
   position: relative;
 }
-@media (max-width: 501px) {
+nav .container .menu_right ul li.svg {
+  position: absolute;
+  right: 100px;
+  font-size: 30px;
+}
+@media (max-width: 676px) {
   nav .container .menu_right ul li {
     padding-bottom: 20px;
   }
+  nav .container .menu_right ul li.svg {
+    position: absolute;
+    right: 60px;
+    font-size: 20px;
+  }
 }
-@media (min-width: 501px) {
+@media (min-width: 676px) {
+  nav .container .menu_right ul li {
+    display: flex;
+    justify-content: flex-end;
+  }
   nav .container .menu_right ul li #PanierCount {
     position: absolute;
     top: 2%;
+    left: 40px;
   }
 }
-@media (max-width: 501px) {
+@media (max-width: 676px) {
   nav .container .menu_right ul li #PanierCount {
     position: absolute;
     top: 2%;
@@ -241,12 +271,13 @@ nav .container .menu_right ul li select {
 .footer_container .footer--second .footer--second--nav ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 50px;
 }
 .footer_container .footer--second .footer--second--nav ul a {
+  text-align: center;
   color: #2D4059;
   font-size: 2.25rem;
-  text-align: center;
   font-weight: 500;
 }
 .footer_container .footer_third {
@@ -261,6 +292,35 @@ nav .container .menu_right ul li select {
   line-height: 43px;
 }
 
+@media screen and (min-width: 901px) {
+  .footer_container .footer_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer_container .footer_first .footer_first_item {
+    min-width: 200px;
+    max-width: 300px;
+  }
+  .footer_container .footer--second {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer_container .footer--second .footer--second--nav ul {
+    align-items: flex-start;
+  }
+  .footer_container .footer--second .footer--second--nav ul a {
+    font-size: 1.12rem;
+  }
+  .footer_container .footer--second .footer--second--nav .navlist {
+    display: flex;
+    align-items: flex-end;
+  }
+  .footer_container .footer_third .footer_mentions {
+    font-size: 18px;
+  }
+}
 .red {
   color: #EA5455;
 }

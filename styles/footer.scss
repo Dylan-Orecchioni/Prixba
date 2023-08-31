@@ -6,6 +6,10 @@
         margin: 0 auto;
         padding: 30px;
         background-color: settings.$blue;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
 
         .footer_first_item {
             display: flex;
@@ -33,7 +37,7 @@
                 display: flex;
                 flex-direction: column;
                 color: settings.$grey;
-                gap: 10px;
+                gap: 0px;
                 padding-left: 15px;
                 h2 {
                     font-size: 1.56rem;
@@ -94,14 +98,35 @@
 @media screen and (min-width: 901px) {
     .footer_container {
         .footer_first{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: row;
             gap: 20px;
-            .footer_first_item {
-                min-width: 200px;
-                max-width: 300px;
 
+            .footer_first_item {
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+
+                svg {
+                    height: 36px;
+                    width: 36px;
+                }
+
+                .footer_item--logo-m {
+                    padding: 10px;
+                }
+
+                .footer_item--body-m {
+                    gap: 10px;
+                    padding-left: 0;
+                    h2 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
             }
         }
 

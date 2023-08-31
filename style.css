@@ -146,6 +146,10 @@ nav .container .menu_right ul li select {
   margin: 0 auto;
   padding: 30px;
   background-color: #2D4059;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 .footer_container .footer_first .footer_first_item {
   display: flex;
@@ -171,7 +175,7 @@ nav .container .menu_right ul li select {
   display: flex;
   flex-direction: column;
   color: rgb(218, 217, 217);
-  gap: 10px;
+  gap: 0px;
   padding-left: 15px;
 }
 .footer_container .footer_first .footer_first_item .footer_item--body-m h2 {
@@ -221,14 +225,31 @@ nav .container .menu_right ul li select {
 
 @media screen and (min-width: 901px) {
   .footer_container .footer_first {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     gap: 20px;
   }
   .footer_container .footer_first .footer_first_item {
-    min-width: 200px;
-    max-width: 300px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .footer_container .footer_first .footer_first_item svg {
+    height: 36px;
+    width: 36px;
+  }
+  .footer_container .footer_first .footer_first_item .footer_item--logo-m {
+    padding: 10px;
+  }
+  .footer_container .footer_first .footer_first_item .footer_item--body-m {
+    gap: 10px;
+    padding-left: 0;
+  }
+  .footer_container .footer_first .footer_first_item .footer_item--body-m h2 {
+    font-size: 18px;
+  }
+  .footer_container .footer_first .footer_first_item .footer_item--body-m p {
+    font-size: 13px;
   }
   .footer_container .footer--second {
     flex-direction: row;

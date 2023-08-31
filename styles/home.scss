@@ -10,11 +10,21 @@
 .blue {
     color: settings.$blue;
 }
-.title {
+.title-m {
     font-size: 30px;
     font-weight: 700;
-    margin-left: 10.5%;
+    margin-left: 41px;
     line-height: 33px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 33px;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 20px;
 }
 .best_sells_section_container{
     margin-top: 120px;
@@ -23,7 +33,7 @@
     .best_sells_container{
         display: flex;
         flex-direction: column;
-
+        position: relative;
  
 
         @media screen and (max-width: 1000px) {
@@ -31,22 +41,27 @@
         }
         .best_sells_card_container {
             display: flex;
-            justify-content: center;
+   
             gap: 21px;
             width: 100%;
-            
+            position: relative;
+
             .next {
-                margin-left: 73px;
+                position: absolute;
+                top: 170px;
+                right: 0px;
             }
             .previous {
-                margin-right: 73px;
+                position: absolute;
+                left: 0px;
+                top: 170px;
             }
 
             .best_sells_card{
                 padding: 17px 22px;
                 margin-top: 41px;
                 box-shadow: 0 0 19px rgba(0, 0, 0, 0.1);
-                width: 15%;
+                width: 20%;
                 .best_sells_card_img {
                     text-align: center;
                     img {

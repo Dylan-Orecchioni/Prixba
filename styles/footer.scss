@@ -1,48 +1,77 @@
 @use 'settings';
 
-.footer_container {
-    margin: 0 auto;
-    padding: 30px;
-    background-color: settings.$blue;
+.footer_container{
     font-family: settings.$font;
-
-    .footer_item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        margin-bottom: 15px;
-
-        .footer_item--logo-m {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            border-radius: 50%;
-            background-color: settings.$grey;
-            max-width: 50px;
-
-            svg {
-                fill: settings.$red;
-                height: 3em;
-            }
-        }
-
-        .footer_item--body-m{
+    .footer--first {
+        margin: 0 auto;
+        padding: 30px;
+        background-color: settings.$blue;
+        .footer_item {
             display: flex;
             flex-direction: column;
-            color: settings.$grey;
-            gap: 10px;
-            padding-left: 15px;
-            h2 {
-                font-size: 1.56rem;
-                font-weight: 700;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+
+            .footer_item--logo-m {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                border-radius: 50%;
+                background-color: settings.$grey;
+                max-width: 50px;
+
+                svg {
+                    fill: settings.$red;
+                    height: 3em;
+                }
             }
-            p{
-                font-size: 1.12rem;
-                font-weight: 500;
+
+            .footer_item--body-m{
+                display: flex;
+                flex-direction: column;
+                color: settings.$grey;
+                gap: 10px;
+                padding-left: 15px;
+                h2 {
+                    font-size: 1.56rem;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 1.12rem;
+                    font-weight: 500;
+                }
+            }
+
+        }
+    }
+
+    .footer--second{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px 50px;
+        gap: 111px;
+        background-color: settings.$grey;
+
+        .footer--second--nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                
+                a {
+                    color: settings.$blue;
+                    font-size: 2.25rem;
+                    text-align: center;
+                    font-weight: 500;
+                }
             }
         }
-
     }
 }

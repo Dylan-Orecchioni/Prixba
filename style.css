@@ -504,6 +504,53 @@ nav .container .menu_right ul li select {
     order: 2;
   }
 }
+h6 {
+  font-weight: 600;
+}
+
+.product_index {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 50px 200px;
+}
+.product_index .products {
+  display: block;
+}
+.product_index .products .product_detail {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 30px;
+  border: solid 2px rgb(247, 247, 247);
+}
+.product_index .products .product_detail img {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.product_index .products .product_detail .detail {
+  margin-left: 50px;
+}
+.product_index .products .product_detail .detail h6 {
+  margin: 10px;
+}
+.product_index .products .product_detail .detail h6.green {
+  color: #42CC58;
+}
+.product_index .product_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 50px;
+  padding: 20px;
+  border: solid 1px rgb(247, 247, 247);
+}
+.product_index .product_list .card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
 html {
   font-family: "Montserrat", sans-serif;
 }
